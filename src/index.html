@@ -7,11 +7,125 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
+    <title>HTML Form</title>
+
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <fieldset>
+      <legend>Personal information</legend>
+      
+      <div class="labl">
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required>
+      </div>
+      
+      <div class="labl">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <div class="labl">
+        <label for="old">How old are you:</label>
+        <input type="number" value="12" id="old" max="100" name="old" required>
+      </div>
+      
+      <div class="labl">
+        <label for="birthday">Full date of birth:</label>
+        <input type="date" id="birthday" name="birthday" required>
+      </div>
+      
+      <div class="labl">
+        <label for="acceptAgreement">I accept the term of the agreement:</label>
+        <input
+          type="checkbox"
+          id="acceptAgreement"
+          name="acceptAgreement"
+          required
+        >
+      </div>
+      
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Registration</legend>
+
+      <div class="labl">
+        <label for="email">E-mail:</label>
+        <input type="text" placeholder="email@example.com" id="email" name="email" required>
+      </div>
+      
+      <div class="labl">
+        <label for="password">Password:</label>
+        <input type="password"  id="password" name="password" maxlength="" required>
+      </div>
+      
+    </fieldset>
+
+    <fieldset>
+      <legend>An interesting fact about you!</legend>
+      
+      <div class="labl">
+        Do you love cats?
+        <label>
+        <input type="radio" name="loveCats" value="y">Yes
+        </label>
+
+        <label>
+        <input type="radio" name="loveCats" value="n">No
+        </label>
+      </div>
+      
+      <div class="labl">
+        What is your favorite color?
+        <input type="color" name="color">
+      </div>
+      
+      <div class="labl">
+        Wat time do you go to bad?
+        <input type="time" name="time">
+      </div>
+      
+      <div class="labl">
+      War are your favorite brand of cars?
+      <select multiple>
+        <option value="bmw">BMW</option>
+        <option value="audi">Audi</option>
+        <option value="lada">Lada</option>
+      </select>
+      </div>
+
+      <div class="labl">
+        How do you rate our work?
+        <input type="range" value="0">
+      </div>
+
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional info:</legend>
+
+      <div class="labl">
+        <label class="label-botton">
+          Comments
+          <textarea name="feedback"></textarea>
+        </label>
+      </div>
+
+      <div class="label">
+        Would you recommend us?
+        <select>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+
+    </fieldset>
+    <button type="submit" onsubmit="onSubmit()" class="labl">
+      Submit
+    </button>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
