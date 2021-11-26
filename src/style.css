@@ -3,6 +3,10 @@
   margin-bottom: 10px;
 }
 
+.labl:last-child {
+  margin-bottom: 0;
+}
+
 fieldset {
   margin-bottom: 20px;
 }
