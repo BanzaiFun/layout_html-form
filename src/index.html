@@ -14,27 +14,45 @@
   <body>
     <fieldset>
       <legend>Personal information</legend>
-      
+
       <div class="labl">
         <label for="surname">Surname:</label>
-        <input type="text" id="surname" name="surname" required>
+        <input type="text"
+               id="surname"
+               name="surname"
+               required
+        >
       </div>
-      
+
       <div class="labl">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text"
+               id="name"
+               name="name"
+               required
+        >
       </div>
-      
+
       <div class="labl">
         <label for="old">How old are you:</label>
-        <input type="number" value="12" id="old" max="100" name="old" required>
+        <input type="number"
+               value="12"
+               id="old"
+               max="100"
+               name="old"
+               required
+        >
       </div>
-      
+
       <div class="labl">
         <label for="birthday">Full date of birth:</label>
-        <input type="date" id="birthday" name="birthday" required>
+        <input type="date"
+               id="birthday"
+               name="birthday"
+               required
+        >
       </div>
-      
+
       <div class="labl">
         <label for="acceptAgreement">I accept the term of the agreement:</label>
         <input
@@ -44,7 +62,7 @@
           required
         >
       </div>
-      
+
 
     </fieldset>
 
@@ -53,47 +71,64 @@
 
       <div class="labl">
         <label for="email">E-mail:</label>
-        <input type="text" placeholder="email@example.com" id="email" name="email" required>
+        <input type="text"
+               placeholder="email@example.com"
+               id="email"
+               name="email"
+               required
+        >
       </div>
-      
+
       <div class="labl">
         <label for="password">Password:</label>
-        <input type="password"  id="password" name="password" maxlength="" required>
+        <input type="password"
+               id="password"
+               name="password"
+               required
+        >
       </div>
-      
+
     </fieldset>
 
     <fieldset>
       <legend>An interesting fact about you!</legend>
-      
+
       <div class="labl">
         Do you love cats?
-        <label>
-        <input type="radio" name="loveCats" value="y">Yes
+        <label for="loveCats-y">
+          <input type="radio"
+                 name="loveCats"
+                 value="y"
+                 id="loveCats-y"
+          >Yes
         </label>
 
-        <label>
-        <input type="radio" name="loveCats" value="n">No
+        <label for="loveCats-n">
+          <input type="radio"
+                 name="loveCats"
+                 value="n"
+                 id="loveCats-n"
+          >No
         </label>
       </div>
-      
+
       <div class="labl">
         What is your favorite color?
         <input type="color" name="color">
       </div>
-      
+
       <div class="labl">
         Wat time do you go to bad?
         <input type="time" name="time">
       </div>
-      
+
       <div class="labl">
-      War are your favorite brand of cars?
-      <select multiple>
-        <option value="bmw">BMW</option>
-        <option value="audi">Audi</option>
-        <option value="lada">Lada</option>
-      </select>
+        War are your favorite brand of cars?
+        <select multiple>
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="lada">Lada</option>
+        </select>
       </div>
 
       <div class="labl">
@@ -108,9 +143,9 @@
       <legend>Additional info:</legend>
 
       <div class="labl">
-        <label class="label-botton">
+        <label for="comment" class="label-botton">
           Comments
-          <textarea name="feedback"></textarea>
+          <textarea id="comment" name="feedback"></textarea>
         </label>
       </div>
 
@@ -123,7 +158,10 @@
       </div>
 
     </fieldset>
-    <button type="submit" onsubmit="onSubmit()" class="labl">
+    <button type="submit"
+            onsubmit="onSubmit()"
+            class="labl"
+    >
       Submit
     </button>
     <script type="text/javascript" src="./main.js"></script>
