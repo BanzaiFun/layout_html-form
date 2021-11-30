@@ -1,12 +1,12 @@
 /* styles go here */
-.labl {
+.label-form {
   margin-bottom: 10px;
 }
 
-.labl:last-child {
+.label-form:last-child {
   margin-bottom: 0;
 }
 
-fieldset {
+.form-fieldset {
   margin-bottom: 20px;
 }
